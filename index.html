@@ -6,6 +6,9 @@
     <meta name="sapphire's links" content="width=device-width, initial-scale=1.0">
     <title>Sapphire's Links</title>
     <style>
+      *{
+        border:thin red solid;
+      }
 
       body{
         padding-top: 40px;
@@ -21,53 +24,82 @@
         object-fit: cover;
         border-radius: 128px;
         border: thick double #32a1ce;
+        display: flex;
+        justify-content: center;
       }
-
+      .items{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+      }
       .header{
+        font-size: 24px;
         color: #32a1ce;
         display: flex;
         justify-content: center;
         padding: 5px;
       }
+
       .social-media{
         color: #32a1ce;
         display: flex;
         justify-content: space-around;
         padding: 5px;
       }
-      
+  
       .overview{
         background-color: white;
         border-radius: 50px;
         opacity: .8;
-        padding: 20px;
+        padding: 30px;
+      }
+
+      .link{
+        background-color: seashell;
+        opacity: .7;
+
+      }
+
+      .link a, .social-media a{
+        color: aquamarine
+        text-decoration: none;
+      }
+
+      a:hover{
+        color:aqua
+      }
+      a:visited{
+        color: teal
       }
     </style>
   </head>
 
 <body>
+
+<div class="items">
   <div class="banner">
     <img src="/thumbnails/waves.jpg" alt="image of waves" class="banner-image"/> 
   </div>
+    <div class="overview">
+      <div class="header">
+        Sapphire Doulas
+      </div>
 
-  <div class="overview">
-    <div class="header">
-      Sapphire Doulas
+      <div class="social-media">
+        <a href="https://github.com/Lacedaemonian88">Github</a>
+        <a href="https://www.linkedin.com/">LinkedIn Homepage</a>
+      </div>
     </div>
+    <div class="link">
+      <a href="https://foundryvtt.com/">Foundry VTT Homepage</a>
+      <a href="https://roll20.net/">Roll20 Homepage</a>
+      <a href="https://www.youtube.com/@WartimeStories">Wartime Stories - Youtube</a>
+      <a href="https://forecast.weather.gov/MapClick.php?lat=41.8843&lon=-87.6324">NOAA Weather Forecast</a>
+      <!-- https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg -->
+    </div>
+  </div>  
 
-    <div class="social-media">
-      <a href="https://github.com/Lacedaemonian88">Github</a>
-      <a href="https://www.linkedin.com/">LinkedIn</a>
-    </div>
-  </div>
-  <div class="link">
-    <a href="https://foundryvtt.com/">Foundry VTT</a>
-    <a href="https://roll20.net/">Roll20</a>
-    <a href="https://www.youtube.com/@WartimeStories">Wartime Stories - Youtube</a>
-    <a href="https://forecast.weather.gov/MapClick.php?lat=41.8843&lon=-87.6324">NOAA Weather Forecast</a>
-    <!-- https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg -->
-  </div>
-  
 </body>
 
 </html>
