@@ -43,6 +43,7 @@
         flex-direction: column;
         gap: 30px;
         max-width: 640px;
+        flex-grow: 1;
       }
       .header{
         font-size: 24px;
@@ -69,13 +70,16 @@
 
       .link{
         background-color: seashell;
-        opacity: .7;
+        display: flex;
+        justify-content: center;
 
       }
 
       .link a, .social-media a{
         color: aquamarine;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
       }
 
       a:hover{
@@ -105,12 +109,18 @@
     </div>
     <div class="link">
       <a href="https://foundryvtt.com/">Foundry VTT Homepage</a>
+    </div>
+    <div class="link">
       <a href="https://roll20.net/">Roll20 Homepage</a>
+    </div>
+    <div class="link">
       <a href="https://www.youtube.com/@WartimeStories">Wartime Stories - Youtube</a>
+    </div>
+    <div class="link">
       <a href="https://forecast.weather.gov/MapClick.php?lat=41.8843&lon=-87.6324">NOAA Weather Forecast</a>
       <!-- https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg -->
     </div>
-  </div>  
+  </d>  
 
 </body>
 
