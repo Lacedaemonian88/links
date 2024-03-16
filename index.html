@@ -24,7 +24,12 @@
         overflow-clip-margin: content-box ;
         overflow: clip;
       } */
-
+      .thumbnail { 
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
       .banner {
         display: flex;
         justify-content: center;
@@ -47,47 +52,45 @@
       }
       .header{
         font-size: 24px;
-        color: #32a1ce;
+        color: teal;
         display: flex;
         justify-content: center;
         padding: 5px;
       }
 
       .social-media{
-        color: #32a1ce;
         display: flex;
         justify-content: space-around;
         padding: 5px;
       }
   
       .overview{
-        background-color: white;
+        background-color: rgb(255, 245, 238, .8);
         border-radius: 50px;
-        opacity: .8;
         padding: 30px;
         margin: 3px 50px;
       }
 
       .link{
-        background-color: seashell;
+        background-color: rgb(210, 170, 109, .9);
         display: flex;
         justify-content: center;
+        padding: 5px;
 
       }
 
       .link a, .social-media a{
-        color: aquamarine;
+        color:#32a1ce;
         text-decoration: none;
         text-align: center;
         flex-grow: 1;
       }
 
       a:hover{
-        color:aqua
+        color:aquamarine
       }
-      a:visited{
-        color: teal
-      }
+
+      
     </style>
   </head>
 
@@ -108,17 +111,21 @@
       </div>
     </div>
     <div class="link">
-      <a href="https://foundryvtt.com/">Foundry VTT Homepage</a>
+      <img class="thumbnail" src="thumbnails/dice.jpg">
+      <a href="https://foundryvtt.com/" target="_blank">Foundry VTT Homepage</a>
     </div>
     <div class="link">
-      <a href="https://roll20.net/">Roll20 Homepage</a>
+      <img class="thumbnail" src="thumbnails/icon.png">
+      <a href="https://roll20.net/" target="_blank">Roll20 Homepage</a>
     </div>
     <div class="link">
-      <a href="https://www.youtube.com/@WartimeStories">Wartime Stories - Youtube</a>
+      <img class="thumbnail" src="/thumbnails/wartime-stories logo.png">
+      <a href="https://www.youtube.com/@WartimeStories" target="_blank">Wartime Stories - Youtube</a>
     </div>
     <div class="link">
-      <a href="https://forecast.weather.gov/MapClick.php?lat=41.8843&lon=-87.6324">NOAA Weather Forecast</a>
-      <!-- https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg -->
+      <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg">
+      <a href="https://forecast.weather.gov/MapClick.php?lat=41.8843&lon=-87.6324" target="_blank">NOAA Weather Forecast</a>
+      
     </div>
   </d>  
 
